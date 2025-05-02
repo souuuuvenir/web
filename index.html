@@ -5,27 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Music</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .boton-rosado {
-      display: inline-block;
-      background-color: #ff66a3;
-      color: white;
-      padding: 15px 30px;
-      margin: 20px auto;
-      border: none;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    .boton-rosado:hover {
-      background-color: #e0558f;
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body>
   <header class="header">
@@ -59,7 +38,42 @@
       <div style="text-align: center;">
         <a href="https://miyabami.github.io/lusof/" target="_blank" class="boton-rosado">codigo de las pizzas :3</a>
       </div>
+
+      <!-- Formulario de sugerencias -->
+      <section class="sugerencias">
+        <h2>¿Tienes una sugerencia?</h2>
+        <p>Déjanos tu correo y tu idea, y la leeremos con gusto.</p>
+        <form id="form-sugerencia" action="https://formsubmit.co/musicrecomendaciones@gmail.com" method="POST">
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="mensaje">Sugerencia:</label><br>
+          <textarea id="mensaje" name="message" rows="4" required></textarea><br><br>
+
+          <!-- Campos ocultos para personalizar el correo -->
+          <input type="hidden" name="_subject" value="Nueva sugerencia del sitio">
+          <input type="hidden" name="_captcha" value="false">
+
+          <button type="submit" class="boton-rosado">Enviar sugerencia</button>
+        </form>
+
+        <!-- Mensaje de confirmación -->
+        <div id="mensaje-confirmacion" style="display: none;">
+          <h3>Tu sugerencia ha sido enviada.</h3>
+          <p>Gracias por tu mensaje. Nos pondremos en contacto pronto.</p>
+        </div>
+      </section>
+
     </div>
   </main>
+
+  <script>
+    
+    document.getElementById('form-sugerencia').addEventListener('submit', function() {
+      document.getElementById('form-sugerencia').style.display = 'none';  // Oculta el formulario
+      document.getElementById('mensaje-confirmacion').style.display = 'block';  // Muestra el mensaje
+    });
+  </script>
+
 </body>
 </html>
