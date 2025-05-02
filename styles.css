@@ -251,3 +251,100 @@ body {
 .album-link {
   display: inline-block;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f1f6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-title {
+  text-align: center;
+  color: #ff66a3;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+}
+
+.album-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.album-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin: 10px 0;
+}
+
+.song-image {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.album-review {
+  text-align: center;
+}
+
+.boton-rosado {
+  display: inline-block;
+  background-color: #ff66a3;
+  color: white;
+  padding: 15px 30px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-rosado:hover {
+  background-color: #e0558f;
+  transform: scale(1.05);
+}
+
+.sugerencias {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sugerencias h2 {
+  color: #ff66a3;
+}
+
+.sugerencias input,
+.sugerencias textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#mensaje-confirmacion {
+  text-align: center;
+  color: #ff66a3;
+}
