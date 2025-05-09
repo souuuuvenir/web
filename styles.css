@@ -20,7 +20,7 @@ body {
   text-align: center;
   font-size: 1.6rem; /* Reducido aún más */
   margin-top: 15px; /* Reducir margen superior */
-  color: rgba(103, 66, 66, 0.04);
+  color: rgba(196, 80, 231, 0.58);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: bold;
@@ -40,7 +40,7 @@ body {
   text-align: center;
   font-size: 1.2rem; /* Reducido aún más */
   margin-top: 20px;
-  color: #daa6a6;
+  color: rgb(218, 218, 166);
   text-transform: uppercase;
   letter-spacing: 0.3px;
 }
@@ -58,7 +58,7 @@ body {
   text-decoration: none;
   font-size: 0.9rem; /* Mucho más pequeño */
   color: #fff;
-  background-color: #2d4662;
+  background-color: rgba(45, 70, 98, 0.35);
   padding: 6px 12px; /* Reducir el tamaño del botón */
   margin: 6px;
   border-radius: 20px; /* Bordes más suaves */
@@ -67,7 +67,7 @@ body {
 
 /* Efecto de hover para los enlaces */
 .album-link:hover {
-  background-color: #29598e;
+  background-color: #6f869f;
   transform: translateY(-2px);
 }
 
@@ -105,7 +105,7 @@ footer p {
 .song-image {
   width: 100%;
   height: auto;
-  max-width: 250px; /* Limitar el tamaño máximo de las imágenes */
+  max-width: 154px; /* Limitar el tamaño máximo de las imágenes */
   margin: 0 auto;
   display: block;
 }
@@ -116,7 +116,7 @@ footer p {
   font-size: 1.1rem; /* Reducido para hacerlo más armonioso */
   color: #fff;
   text-decoration: none;
-  background-color: #007BFF;
+  background-color: rgba(0, 123, 255, 0.63);
   padding: 8px 15px;
   border-radius: 20px;
   margin-top: 10px;
@@ -125,7 +125,7 @@ footer p {
 }
 
 .song-link:hover {
-  background-color: #1178e8;
+  background-color: #3e5e81;
   transform: translateY(-3px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
@@ -267,7 +267,7 @@ body {
 
 .main-title {
   text-align: center;
-  color: #ff66a3;
+  color: rgba(173, 102, 255, 0.56);
 }
 
 .subtitle {
@@ -302,7 +302,7 @@ body {
 
 .boton-rosado {
   display: inline-block;
-  background-color: #ff66a3;
+  background-color: rgba(114, 102, 255, 0.61);
   color: white;
   padding: 15px 30px;
   margin: 20px auto;
@@ -316,7 +316,7 @@ body {
 }
 
 .boton-rosado:hover {
-  background-color: #e0558f;
+  background-color: rgba(57, 80, 144, 0.81);
   transform: scale(1.05);
 }
 
@@ -330,7 +330,7 @@ body {
 }
 
 .sugerencias h2 {
-  color: #ff66a3;
+  color: #7266ff;
 }
 
 .sugerencias input,
