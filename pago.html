@@ -3,29 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Información de Pago</title>
-  <link rel="stylesheet" href="tienda.css" />
+  <title>Pagar Compra</title>
+  <link rel="stylesheet" href="pago.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h1>Información de Envío y Pago</h1>
+  <div class="pago-container">
+    <h2>Información de Pago</h2>
     <form id="form-pago">
       <label for="direccion">Dirección de envío:</label>
-      <input type="text" id="direccion" name="direccion" required>
+      <input type="text" id="direccion" name="direccion" required placeholder />
 
       <label for="tarjeta">Número de tarjeta:</label>
-      <input type="text" id="tarjeta" name="tarjeta" required maxlength="9" pattern="\d{9}">
+      <input type="text" id="tarjeta" name="tarjeta" required placeholder />
 
-      <button type="submit">Confirmar compra</button>
+      <button type="submit">Confirmar Pago</button>
+        <a href="tienda.html" class="btn-regresar">← Volver a tienda</a>
     </form>
   </div>
 
-  <script>
-    document.getElementById('form-pago').addEventListener('submit', function(e) {
-      e.preventDefault();
-      window.location.href = 'ticket.html';
-    });
-  </script>
-    <a href="tienda.html" class="btn btn-regresar">Volver a la tienda</a>
+  <script src="pago.js"></script>
 </body>
 </html>
