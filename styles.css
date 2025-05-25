@@ -1,350 +1,318 @@
-/* Estilo base para el cuerpo y contenedores */
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f9; /* Fondo suave */
-  color: #6f6f6f;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #2c3e50;
 }
 
-/* Contenedor principal */
 .container {
-  width: 90%;
-  max-width: 900px; /* Reducir aún más el tamaño máximo */
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 10px; /* Reducir margen lateral */
+  padding: 0 1rem;
 }
 
-/* Título principal */
+.header {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 2rem 0;
+  text-align: center;
+}
+
 .main-title {
-  text-align: center;
-  font-size: 1.6rem; /* Reducido aún más */
-  margin-top: 15px; /* Reducir margen superior */
-  color: rgba(196, 80, 231, 0.58);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin: 0 0 0.3rem;
 }
 
-/* Subtítulo debajo del título */
 .subtitle {
-  text-align: center;
-  font-size: 0.9rem; /* Mucho más pequeño */
-  margin-top: 5px;
-  color: rgba(54, 122, 139, 0.55); /* Color más suave */
-  font-style: italic;
-}
-
-/* Título de la lista de álbumes */
-.albums-title {
-  text-align: center;
-  font-size: 1.2rem; /* Reducido aún más */
-  margin-top: 20px;
-  color: rgb(218, 218, 166);
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-/* Lista de álbumes */
-.album-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  margin-top: 15px;
-}
-
-.album-link {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 0.9rem; /* Mucho más pequeño */
-  color: #fff;
-  background-color: rgba(45, 70, 98, 0.35);
-  padding: 6px 12px; /* Reducir el tamaño del botón */
-  margin: 6px;
-  border-radius: 20px; /* Bordes más suaves */
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-/* Efecto de hover para los enlaces */
-.album-link:hover {
-  background-color: #6f869f;
-  transform: translateY(-2px);
-}
-
-/* Estilo para el pie de página */
-
-
-footer p {
-  font-size: 0.8rem; /* Reducir tamaño de pie de página */
+  font-weight: 400;
+  font-size: 1.2rem;
   margin: 0;
 }
 
-/* Responsividad: Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 1.4rem; /* Reducir más el tamaño en móviles */
-  }
-
-  .subtitle {
-    font-size: 0.8rem; /* Reducir más el subtítulo */
-  }
-
-  .albums-title {
-    font-size: 1rem; /* Reducir aún más el título de álbumes */
-  }
-
-  .album-link {
-    font-size: 0.8rem; /* Reducir aún más el tamaño de los enlaces */
-    padding: 5px 10px; /* Reducir padding */
-  }
-
-  footer p {
-    font-size: 0.7rem; /* Reducir tamaño de pie de página */
-  }
-}
-.song-image {
-  width: 100%;
-  height: auto;
-  max-width: 154px; /* Limitar el tamaño máximo de las imágenes */
-  margin: 0 auto;
-  display: block;
+.albums-horizontal {
+  margin: 2rem 0;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
 }
 
-/* Estilo de los enlaces dentro del carrusel */
-.song-link {
-  display: inline-block;
-  font-size: 1.1rem; /* Reducido para hacerlo más armonioso */
-  color: #fff;
+.album-list-horizontal {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.album-list-horizontal li a {
   text-decoration: none;
-  background-color: rgba(0, 123, 255, 0.63);
-  padding: 8px 15px;
-  border-radius: 20px;
-  margin-top: 10px;
-  transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  color: #34495e;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.song-link:hover {
-  background-color: #3e5e81;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+.album-list-horizontal li a:hover {
+  background-color: #7c81c3;
+  color: white;
 }
 
-/* Estilo del texto de la reseña */
-.album-review {
-  margin-top: 40px;
-  padding: 15px 20px;
+.highlight {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  margin-bottom: 3rem;
 }
 
-.album-review h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
+.highlight-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.album-review p {
+.highlight-text {
+  flex: 1;
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
-  padding: 0 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Estilo para el pie de página */
-footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer p {
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-/* Responsividad: Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem; /* Reducir tamaño del título */
-  }
-
-  .song-image {
-    max-width: 200px; /* Reducir tamaño de las imágenes */
-  }
-
-  .song-link {
-    font-size: 0.9rem;
-    padding: 6px 12px; /* Reducir tamaño del botón */
-  }
-
-  .album-review h2 {
-    font-size: 1.2rem; /* Reducir el tamaño del título en la reseña */
-  }
-
-  .album-review p {
-    font-size: 0.9rem; /* Reducir el tamaño del texto en la reseña */
-  }
-}
-/* Estilo base para el cuerpo y contenedores */
-
-/* Estilo base para el cuerpo y contenedores */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9; /* Fondo suave */
-  color: #333;
-}
-
-/* Contenedor principal */
-.container {
-  width: 90%;
-  max-width: 900px; /* Reducir aún más el tamaño máximo */
-  margin: 0 auto;
-  padding: 0 10px; /* Reducir margen lateral */
-}
-
-/* Título principal */
-.main-title {
-  text-align: center;
-  font-size: 1.6rem; /* Reducido aún más */
-  margin-top: 15px; /* Reducir margen superior */
-  color: #444;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: bold;
-}
-
-/* Subtítulo debajo del título */
-.subtitle {
-  text-align: center;
-  font-size: 0.9rem; /* Mucho más pequeño */
-  margin-top: 5px;
-  color: #777; /* Color más suave */
-  font-style: italic;
-}
-
-/* Título de la lista de álbumes */
-.albums-title {
-  text-align: center;
-  font-size: 1.2rem; /* Reducido aún más */
-  margin-top: 20px;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-/* Lista de álbumes */
-.album-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  margin-top: 15px;
-}
-
-.album-link {
-  display: inline-block;
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f1f6;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.main-title {
-  text-align: center;
-  color: rgba(173, 102, 255, 0.56);
-}
-
-.subtitle {
-  text-align: center;
-  color: #666;
-}
-
-.album-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.album-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 18px;
-  display: block;
-  margin: 10px 0;
+  color: #2c3e50;
+  font-family: 'Inter', sans-serif;
 }
 
 .song-image {
-  display: block;
-  margin: 20px auto;
+  max-width: 300px;
   width: 100%;
-  max-width: 500px;
-}
-
-.album-review {
-  text-align: center;
-}
-
-.boton-rosado {
-  display: inline-block;
-  background-color: rgba(114, 102, 255, 0.61);
-  color: white;
-  padding: 15px 30px;
-  margin: 20px auto;
-  border: none;
   border-radius: 12px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.boton-rosado:hover {
-  background-color: rgba(57, 80, 144, 0.81);
-  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .sugerencias {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
   background-color: #fff;
+  padding: 1.5rem 1rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  max-width: 500px;
+  margin: 0 auto 4rem;
+  font-size: 0.9rem;
+  color: #34495e;
 }
 
 .sugerencias h2 {
-  color: #7266ff;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
 }
 
-.sugerencias input,
+.sugerencias p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.sugerencias label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.sugerencias input[type="email"],
 .sugerencias textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1.8px solid #ccc;
   border-radius: 8px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.3s;
 }
 
-#mensaje-confirmacion {
+.sugerencias input[type="email"]:focus,
+.sugerencias textarea:focus {
+  border-color: #f76253;
+  outline: none;
+}
+
+.boton-rosado {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.95rem;
+}
+
+.boton-rosado:hover {
+  background-color: #7c7878;
+}
+
+/* Mensaje confirmación */
+#mensaje-confirmacion h3 {
+  color: #27ae60;
+  margin-bottom: 0.5rem;
+}
+
+#mensaje-confirmacion p {
+  margin-top: 0;
+  font-size: 0.9rem;
+  color: #34495e;
+}
+
+.albums-horizontal::-webkit-scrollbar {
+  height: 8px;
+}
+
+.albums-horizontal::-webkit-scrollbar-thumb {
+  background-color: #ff6f61;
+  border-radius: 4px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   text-align: center;
-  color: #ff66a3;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #5dade2, #3498db);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+.btn-pizzas {
+  background: linear-gradient(145deg, #4aa3df, #2c82c9);
+}
+
+.btn-musica {
+  background: linear-gradient(145deg, #3fb6c4, #269baf);
+}
+.album-wrapper {
+  max-width: 400px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.album-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.album-wrapper {
+  max-width: 400px;
+  margin: 2rem auto 3rem;
+  text-align: center;
+}
+
+.album-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.album-image-wrapper {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.album-image-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.album-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.album-canciones {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: #34495e;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  user-select: none;
+}
+.album-image-wrapper:hover + .album-canciones {
+  opacity: 1;
+  max-height: 500px;
+  user-select: text;
+}
+.album-canciones li {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+.album-review {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.album-review h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-regresar {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0077cc;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.btn-regresar:hover {
+  color: #005fa3;
 }
