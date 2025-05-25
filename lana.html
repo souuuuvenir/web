@@ -1,79 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lana del Rey - Honeymoon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
+  <div class="container">
+    <header>
       <h1 class="title">Lana del Rey - Honeymoon</h1>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <div class="container">
-      <!-- Carrusel de Swiper con las canciones -->
-      <section class="swiper-container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Canción 1 -->
-            <div class="swiper-slide">
-              <img src="lana.jpg" alt="Honeymoon" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=oPU8XJcA__k" target="_blank" class="song-link">Honeymoon</a>
-              </div>
-            </div>
-            <!-- Canción 2 -->
-            <div class="swiper-slide">
-              <img src="lana.jpg" alt="Canción 2" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=3-NTv0CdFCk&list=RD3-NTv0CdFCk&start_radio=1" target="_blank" class="song-link">Love</a>
-              </div>
-            </div>
-            <!-- Canción 3 -->
-            <div class="swiper-slide">
-              <img src="lana.jpg" alt="Canción 3" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=QbLGjeR9bvI" target="_blank" class="song-link">art deco</a>
-              </div>
-            </div>
-            <!-- Canción 4 -->
-            <div class="swiper-slide">
-              <img src="lana.jpg" alt="Canción 4" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=jq30l5-vBbo" target="_blank" class="song-link">freak</a>
-              </div>
-            </div>
-            <!-- Canción 5 -->
-            <div class="swiper-slide">
-              <img src="lana.jpg" alt="Canción 5" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=emDU4QvdwVk" target="_blank" class="song-link">terrence loves you</a>
-              </div>
-            </div>
-          </div>
-          <!-- Navegación -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
+    <a href="music.html" class="btn-regresar">← Volver a Música</a>
 
-      <!-- Reseña del álbum debajo del carrusel -->
+    <div class="album-wrapper">
+      <h2 class="album-title">Honeymoon</h2>
+
+      <div class="album-image-wrapper">
+        <img src="lana.jpg" alt="Honeymoon" class="album-image" />
+      </div>
+
+      <ul class="album-canciones">
+        <li>Honeymoon 🎶</li>
+        <li>Love 🎶</li>
+        <li>Terrence Loves You 🎶</li>
+        <li>High by the Beach 🎶</li>
+        <li>Freak 🎶</li>
+      </ul>
+
       <section class="album-review">
-        <h2>Reseña del Álbum</h2>
-        <p>Honeymoon es el cuarto álbum de estudio de Lana del Rey, lanzado en 2015. Con este álbum, Lana se adentra en sonidos melancólicos y orquestales, manteniendo su toque de pop sombrío y nostálgico.</p>
+        <h3>Reseña del Álbum</h3>
+        <p>
+          Honeymoon es el cuarto álbum de Lana del Rey, lanzado en 2015. Se caracteriza por su atmósfera cinematográfica y letras melancólicas que exploran temas de amor y desamor.
+        </p>
       </section>
     </div>
-  </main>
-
-  
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
