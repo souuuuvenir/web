@@ -1,0 +1,175 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+
+.header {
+  background-color: #343a40;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+}
+
+
+.search-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.search-section input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-section button {
+  padding: 10px 16px;
+  margin-left: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-section button:hover {
+  background-color: #0056b3;
+}
+
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.producto p {
+  margin: 4px 0;
+}
+
+
+.cart {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 350px;
+  margin: 0 auto 40px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.cart-items {
+  list-style: none;
+  margin-bottom: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-left: 0;
+}
+
+.cart-items li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-clear,
+.btn-checkout {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-clear {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-clear:hover {
+  background-color: #c0392b;
+}
+
+.btn-checkout {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-checkout:hover {
+  background-color: #218838;
+}
+
+/* Checkbox alineado */
+.producto input[type="checkbox"] {
+  margin-bottom: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
