@@ -1,87 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zoé - Rocanlover</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="title">Zoé - Rocanlover</h1>
+  <div class="album-wrapper">
+    <h2 class="album-title">ALBUM RECOMENDADO: Zoé - Rocanlover</h2>
+
+    <div class="album-image-wrapper">
+      <img src="rocan.jpg" alt="Portada del álbum Rocanlover de Zoé" class="album-image" />
     </div>
-  </header>
 
-  <main>
-    <div class="container">
-      <!-- Carrusel de Swiper con las canciones -->
-      <section class="swiper-container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Canción 1 -->
-            <div class="swiper-slide">
-              <img src="rocan.jpg" alt="Rocanlover" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=sbrPsMLJoUo" target="_blank" class="song-link">Rocanlover</a>
-              </div>
-            </div>
-            <!-- Canción 2 -->
-            <div class="swiper-slide">
-              <img src="rocan.jpg" alt="Canción 2" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=q3yJ_yDhNVk" target="_blank" class="song-link">Love</a>
-              </div>
-            </div>
-            <!-- Canción 3 -->
-            <div class="swiper-slide">
-              <img src="rocan.jpg" alt="Canción 3" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=YZuz5ZzpaSc" target="_blank" class="song-link">Solo</a>
-              </div>
-            </div>
-            <!-- Canción 4 -->
-            <div class="swiper-slide">
-              <img src="rocan.jpg" alt="Canción 4" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=WSWTI8H0nqs" target="_blank" class="song-link">Tu</a>
-              </div>
-            </div>
-            <!-- Canción 5 -->
-            <div class="swiper-slide">
-              <img src="rocan.jpg" alt="Foto Sintesis" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=-VE8YfSyk_k" target="_blank" class="song-link">Foto Sintesis</a>
-              </div>
-            </div>
-            <!-- Canción 6 -->
-            <div class="swiper-slide">
-              <img src="rocan.jpg" alt="Soñé" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=HJqlA_HTEU8" target="_blank" class="song-link">Soñé</a>
-              </div>
-            </div>
-          </div>
+    <ul class="album-canciones">
+      <li>Rocanlover</li>
+      <li>Love</li>
+      <li>Solo</li>
+      <li>Tu</li>
+      <li>Foto Sintesis</li>
+      <li>Soñé</li>
+    </ul>
 
-          <!-- Navegación -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <!-- Solo la reseña debajo del carrusel -->
-      <section class="album-review">
-        <h2>Reseña del Álbum</h2>
-        <p>Rocanlover es el tercer álbum de estudio de Zoé, lanzado en 2006. Con este álbum, Zoé consolidó su estilo único de psicodelia y rock alternativo. El sonido, melódico y experimental, muestra un equilibrio perfecto entre lo moderno y lo clásico, ofreciendo una experiencia sonora envolvente.</p>
-      </section>
-    </div>
-  </main>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+    <section class="album-review">
+      <h3>Reseña del Álbum</h3>
+      <p>Rocanlover es el tercer álbum de estudio de Zoé, lanzado en 2006. Con este álbum, Zoé consolidó su estilo único de psicodelia y rock alternativo. El sonido, melódico y experimental, muestra un equilibrio perfecto entre lo moderno y lo clásico, ofreciendo una experiencia sonora envolvente.</p>
+     
+    </section>
+     <a href="music.html" class="btn btn-regresar">← Volver a Música</a>
+  </div>
 </body>
 </html>
