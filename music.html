@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="main-title">Bienvenido a la Música</h1>
+      <p class="subtitle">Descubre los álbumes más geniales</p>
+    </div>
+  </header>
+
+  
+  <section class="albums-horizontal container">
+    <ul class="album-list-horizontal">
+      <li><a href="zoe.html">Zoé</a></li>
+      <li><a href="lana.html">Lana del Rey</a></li>
+      <li><a href="deftones.html">Deftones</a></li>
+      <li><a href="marias.html">Hoobastank</a></li>
+      <li><a href="queen.html">Queen</a></li>
+      <li><a href="korn.html">Korn</a></li>
+      <li><a href="enjambre.html">Radiohead</a></li>
+      <li><a href="tienda.html">Tienda de Discos</a></li> <!-- Nuevo enlace -->
+    </ul>
+  </section>
+
+  <main>
+    <section class="highlight container">
+      <div class="highlight-content">
+        <img src="mus%20-%20copia.jpg" alt="Canción destacada" class="song-image" />
+        <div class="highlight-text">
+          <p>
+            La música es el lenguaje universal que despierta emociones, conecta culturas y transforma momentos. Desde el latido del primer tambor hasta las sinfonías más complejas, la música nos invita a soñar, sentir y vivir intensamente. Es la magia invisible que da ritmo a nuestra vida y colorea el silencio con melodías inolvidables.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sugerencias container">
+      <h2>¿Tienes una sugerencia?</h2>
+      <p>Déjanos tu correo y tu idea.</p>
+      <form id="form-sugerencia" action="https://formsubmit.co/musicrecomendaciones@gmail.com" method="POST">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Sugerencia:</label>
+        <textarea id="mensaje" name="message" rows="4" required></textarea>
+
+        <input type="hidden" name="_subject" value="Nueva sugerencia del sitio">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit" class="boton-rosado">Enviar sugerencia</button>
+      </form>
+
+      <div id="mensaje-confirmacion" style="display: none;">
+        <h3>Tu sugerencia ha sido enviada.</h3>
+        <p>Nos pondremos en contacto pronto.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('form-sugerencia').addEventListener('submit', function () {
+      document.getElementById('form-sugerencia').style.display = 'none';
+      document.getElementById('mensaje-confirmacion').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
