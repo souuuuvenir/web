@@ -1,76 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Korn - Issues</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
+  <div class="container">
+    <header>
       <h1 class="title">Korn - Issues</h1>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <div class="container">
-      <!-- Carrusel de Swiper con las canciones -->
-      <section class="swiper-container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Canción 1 -->
-            <div class="swiper-slide">
-              <img src="ko.jpg" alt="Issues" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=2s3iGpDqQpQ" target="_blank" class="song-link">Falling Away From Me</a>
-              </div>
-            </div>
-               <div class="swiper-slide">
-              <img src="ko.jpg" alt="Issues" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=wU6pxz8oCdQ" target="_blank" class="song-link">wake up</a>
-              </div>
-            </div>
-               <div class="swiper-slide">
-              <img src="ko.jpg" alt="Issues" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=BnfixOKISzc" target="_blank" class="song-link">4U</a>
-              </div>
-            </div>
-               <div class="swiper-slide">
-              <img src="ko.jpg" alt="Issues" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=oH9qfBQZYSo" target="_blank" class="song-link">trash</a>
-              </div>
-            </div>
-            <!-- Canción 2 -->
-            <div class="swiper-slide">
-              <img src="ko.jpg" alt="Canción 2" class="song-image" />
-              <div class="song-info">
-                <a href="https://www.youtube.com/watch?v=ujEph5vFwmc" target="_blank" class="song-link">Make Me Bad</a>
-              </div>
-            </div>
-          </div>
+    <a href="music.html" class="btn-regresar">← Volver a Música</a>
 
-          <!-- Navegación -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
+    <div class="album-wrapper">
+      <h2 class="album-title">Issues</h2>
 
-      <!-- Solo la reseña debajo del carrusel -->
+      <div class="album-image-wrapper">
+        <img src="ko.jpg" alt="Issues" class="album-image" />
+      </div>
+
+      <ul class="album-canciones">
+        <li>Falling Away From Me 🎶</li>
+        <li>Wake Up 🎶</li>
+        <li>4U 🎶</li>
+        <li>Trash 🎶</li>
+        <li>Make Me Bad 🎶</li>
+      </ul>
+
       <section class="album-review">
-        <h2>Reseña del Álbum</h2>
-        <p>Issues es el cuarto álbum de estudio de Korn, lanzado en 1999. El álbum presenta un sonido más oscuro y pesado, con una gran influencia del nu-metal. Es un claro ejemplo de la transición de la banda hacia un estilo más maduro, pero manteniendo la intensidad que los caracterizó desde sus inicios.</p>
+        <h3>Reseña del Álbum</h3>
+        <p>
+          Issues es el cuarto álbum de estudio de Korn, lanzado en 1999. El álbum presenta un sonido más oscuro y pesado, con una gran influencia del nu-metal.
+        </p>
       </section>
     </div>
-  </main>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
