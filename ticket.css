@@ -1,0 +1,65 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.ticket-container {
+  background: white;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  width: 320px;
+}
+
+.ticket h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.ticket-id, #fecha {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #999;
+  margin: 1rem 0;
+}
+
+.ticket-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.ticket-items li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #ccc;
+  padding: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.gracias {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #f06292;
+}

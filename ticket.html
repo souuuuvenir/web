@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket de Compra</title>
+  <link rel="stylesheet" href="ticket.css" />
+</head>
+<body>
+  <div class="ticket-container">
+    <div class="ticket">
+      <h2>TICKET DE COMPRA</h2>
+      <p class="ticket-id">Núm. Orden: #<span id="order-id"></span></p>
+      <p>Fecha: <span id="fecha"></span></p>
+      <hr />
+      <ul id="ticket-items" class="ticket-items"></ul>
+      <hr />
+      <p class="total">Total: $<span id="total-ticket">0.00</span></p>
+      <p class="gracias">¡Gracias por su compra!</p>
+    </div>
+  </div>
+
+  <script src="ticket.js"></script>
+</body>
+</html>
